@@ -25,7 +25,7 @@ export const fadeIn = (target, duration = 500) => {
   target.style.removeProperty('display');
   let display = window.getComputedStyle(target).display;
   if (display === 'none') {
-    display = 'flex';
+    display = 'block';
   }
   target.style.display = display;
   target.style.transitionProperty = 'opacity';
